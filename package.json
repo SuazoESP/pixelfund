@@ -1,10 +1,11 @@
 {
     "name": "pixelfund",
     "version": "1.0.0",
+    "type": "module",
     "description": "Plataforma de inversión en píxeles con dividendos",
     "main": "server/server.js",
     "scripts": {
-      "start": "node server/server.js",
+      "start": "node --experimental-vm-modules server/server.js",
       "build": "npm install"
     },
     "dependencies": {
@@ -14,6 +15,6 @@
       "stripe": "^12.12.0"
     },
     "engines": {
-      "node": "18.x"
+      "node": ">=18.x"
     }
   }
